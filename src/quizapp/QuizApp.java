@@ -8,7 +8,7 @@ import static quizapp.CategoryQuestions.category;
 import static quizapp.GeneralQuestions.general;
 
 class QuizApp {
-
+// why?
     public static void main(String args[]) throws Exception {
         //hi ishan
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
