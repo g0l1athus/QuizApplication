@@ -1,4 +1,3 @@
-
 package quizapp;
 
 import static quizapp.RandomIDs.randomGeneration;
@@ -16,7 +15,7 @@ public class CategoryQuestions {
 
         for (int i = 0; i < 10; i++) {
             DatabaseResult db = new DatabaseResult(table);
-            
+
             while (db.getResult().next()) {
                 if (db.getResult().getInt(1) == quesID[i]) {
                     questionTemp[i].question = db.getResult().getString(2);

@@ -30,8 +30,9 @@ public class RandomIDs {
     public static int[] randomRepeat(int length) throws Exception {
         int rep[] = new int[10];
 
-        for (int i = 0; i < 10; i++)
-                rep[i] = random.nextInt(length);
+        for (int i = 0; i < 10; i++) {
+            rep[i] = random.nextInt(length);
+        }
         return rep;
     }
 }
