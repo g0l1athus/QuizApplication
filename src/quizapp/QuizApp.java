@@ -17,9 +17,10 @@ class QuizApp {
         long time1, time2;
         QuestionGeneration question[] = new QuestionGeneration[10];
         Calendar c1, c2;
-
+        String s;
+        
         c1 = Calendar.getInstance();
-
+/*
         System.out.print("Press '1' for Category Quiz '2' For Random Quiz : ");
         choice = scanner.nextInt();
 
@@ -56,12 +57,12 @@ class QuizApp {
                 break;
         }
 
-        /*
+    
          System.out.println("Enter Category in which questions are to be added from file");
          String cat = scanner.next();
          AddQuestionFromFile.add(cat);
          AddQuestion.add(cat);
-         */
+         
 
         System.out.println("Enter The Categories : ");
         String s = br.readLine();
@@ -69,6 +70,20 @@ class QuizApp {
 
         for (int i = 0; i < question.length; i++) {
             System.out.println("\nQuestion " + (i + 1) + question[i]);
+        }
+  */ 
+        System.out.println("Press '1' to add a tabel '2' to delete :");
+        choice = scanner.nextInt();
+        switch(choice){
+            case 1: System.out.println("Enter The Table Name To Be Created : ");
+                    s= scanner.next();
+                    DatabaseResult.tableOperations(s, choice);
+                    break;
+            
+            case 2:System.out.println("Enter The Table Name To Be Deleted : ");
+                    s = scanner.next();
+                    DatabaseResult.tableOperations(s, choice);
+                    break; 
         }
     }
 }
