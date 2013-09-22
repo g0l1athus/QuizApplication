@@ -43,9 +43,7 @@ public class GeneralQuestions {
                         questionTemp[i].option[k] = db.getResult().getString(j++);
                     }
                 }
-            }
-         System.out.println("Category : " + category[i] + "\ncategory ID : " + categoryID[i] + "\nQuestion ID : " + quesID[i]+ "\n\n");
-        
+            }   
         }
         return questionTemp;
     }
