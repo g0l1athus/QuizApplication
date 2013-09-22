@@ -19,7 +19,7 @@ public class GeneralQuestions {
                     category[i] = db.getResult().getString(2);
                 }
             }
-        }
+           }
 
         for (int i = 0; i < 10; i++) {
             quesID[i] = randomInt(category[i]);
@@ -44,6 +44,8 @@ public class GeneralQuestions {
                     }
                 }
             }
+         System.out.println("Category : " + category[i] + "\ncategory ID : " + categoryID[i] + "\nQuestion ID : " + quesID[i]+ "\n\n");
+        
         }
         return questionTemp;
     }

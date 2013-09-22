@@ -5,24 +5,29 @@ import java.util.Calendar;
 public class TheTimer {
 
     Calendar c1, c2;
-
-    public void setTimer1() {
-        c1.getInstance();
+    long time1,time2,minutes,seconds;
+    
+    public void setTime1(){
+        c1 = Calendar.getInstance();
     }
-
-    public void setTimer2() {
-        c2.getInstance();
+    
+    public void setTime2(){
+        c2 = Calendar.getInstance();
     }
-
-    /*public long getTime1(){
-     return c1.getTimeInMillis();
-     }
-   
-     public long getTime2(){
-     return c2.getTimeInMillis();
-     }
-     */
-    public double Time() {
-        return (c2.getTimeInMillis() - c1.getTimeInMillis()) / 1000;
+    
+    public void getTime1(){
+        time1 = c1.getTimeInMillis();
     }
+    
+    public void getTime2(){
+        time2 = c2.getTimeInMillis();
+    }
+    
+    public long getMinutes(){
+        return ((time2-time1)/1000)/60;
+    }
+    
+    public long getSeconds(){
+        return ((time2-time1)/1000)%60;
+    } 
 }
