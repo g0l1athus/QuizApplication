@@ -35,9 +35,6 @@ public class MultipleCategoryQuestions {
                 }
             }
         }
-        for (int i = 0; i < 10; i++) {
-            System.out.println(quesID[i] + "  " + categoryId[i]);
-        }
         return questionTemp;
     }
 }
